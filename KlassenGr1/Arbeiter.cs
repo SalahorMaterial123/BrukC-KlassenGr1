@@ -1,4 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace KlassenGr1
+{
+    internal class Arbeiter : Mensch
+    {
         public string Name { get; set; }
         public int Alter { get; set; }
         public string Beruf { get; set; }
