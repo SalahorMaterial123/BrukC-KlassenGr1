@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace KlassenGr1
 {
@@ -83,3 +85,6 @@ namespace KlassenGr1
                 Console.WriteLine("Bitte geben Sie eine gültige Zahl ein.");
             }
         }
+    }
+}
+    
