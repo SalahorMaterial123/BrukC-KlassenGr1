@@ -17,13 +17,15 @@ Mensch
  │    │    └── Familienarzt (Antonia)
  │    ├── Informatiker (Sabina)
  │    └── Koch (Ana D)
- └── Schuler (Maria)
+ └── Schüler (Maria)
       ├── Grundschule (Matei)
       ├── Gymnasium (Ana V)
       ├── Lyzeum (Iulia)
       │    ├── Prof (Stefan)
       │    └── Teore (Paul)
-      └── Kindergarten (Ioana)
+      ├── Kindergarten (Ioana)
+      └── Hochschule (Alex)
+
 
 
 
