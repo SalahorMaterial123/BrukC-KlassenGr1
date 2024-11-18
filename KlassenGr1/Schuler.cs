@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KlassenGr1
 {
-    internal class Schuler2 : Mensch
+    internal class Schuler : Mensch
     {
         //date
         string nrmat; //numarul matricol al fiecarui elev
@@ -47,14 +47,14 @@ namespace KlassenGr1
 
         //constructori
         //constructor complet cu datele din baza Mensch inclusiv
-        public Schuler2(int cnp, string haarfarbe, string geschlecht, string nameVorname, int grcm, int gw, string nrmat, bool mancare, int nrore) : base(cnp, haarfarbe, geschlecht, nameVorname, grcm, gw)
+        public Schuler(int cnp, string haarfarbe, string geschlecht, string nameVorname, int grcm, int gw, string nrmat, bool mancare, int nrore) : base(cnp, haarfarbe, geschlecht, nameVorname, grcm, gw)
         {
             this.nrmat = nrmat;
             this.mancare = mancare;
             this.nrore = nrore;
         }
         //constructor cu toate datele din clasa aceasta, fara clasa baza
-        public Schuler2(string nrmat, bool mancare, int nrore)
+        public Schuler(string nrmat, bool mancare, int nrore)
         {
             this.nrmat = nrmat;
             this.mancare = mancare;
@@ -63,17 +63,17 @@ namespace KlassenGr1
 
         //Overloading la constructor
         //constructori individuali pentru fiecare data a acestei clase
-        public Schuler2(string nrmat)
+        public Schuler(string nrmat)
         { this.nrmat = nrmat; }
-        public Schuler2(bool mancare)
+        public Schuler(bool mancare)
         { this.mancare = mancare; }
-        public Schuler2(int nrore)
+        public Schuler(int nrore)
         { this.nrore = nrore; }
-        public Schuler2(int nrore, string s)
+        public Schuler(int nrore, string s)
         { this.nrore = nrore; }
 
         //constructor de copiere pentru datele acestei clase
-        public Schuler2(Schuler2 schuler) //Kopiierungskonstruktor mit einem Objekt der Klasse als Parameter
+        public Schuler(Schuler schuler) //Kopiierungskonstruktor mit einem Objekt der Klasse als Parameter
         {
             nrmat = schuler.getNrmat();
             mancare = schuler.getMancare();
