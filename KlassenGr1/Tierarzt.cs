@@ -12,7 +12,7 @@ namespace KlassenGr1
 
         public Tierarzt() { }
 
-        public Tierarzt(string name, int alter, string spezialgebiet) 
+        public Tierarzt(string name, int alter, string spezialgebiet) : base (name, alter, spezialgebiet)
         {
             Spezialgebiet = spezialgebiet;
         }
