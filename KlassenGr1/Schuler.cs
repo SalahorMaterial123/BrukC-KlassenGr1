@@ -13,6 +13,7 @@ namespace KlassenGr1
         bool mancare; //beneficiaza sau nu de mancare la scoala
         int nrore; //nr de ore saptamanal
 
+         public   Schuler() {}
         //Metode
         //Gettere si Settere pentru date
         public void setNrmat(string nrmat)
@@ -135,6 +136,11 @@ namespace KlassenGr1
                 incarcat = false;
             else
                 incarcat = true;
+        }public virtual void prezintate()
+        {
+            
+            Console.WriteLine("eu sunt elevul " +nrmat + " am culoarea parului " + HaarFarbe + " SI MA CHEAMA " + NameVorname);
+
         }
         public void incarcat(Schuler schuler, bool incarcat)
         {

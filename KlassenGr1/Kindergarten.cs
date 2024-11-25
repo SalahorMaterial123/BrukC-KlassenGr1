@@ -41,7 +41,10 @@ namespace KlassenGr1
             if (alergii == "sensibilitate la carne") return "Meniu vegetarian";
             return "Meniu normal";
         }
-
+        public override void prezintate()
+        {
+            Console.WriteLine("eu sunt " + Nrmat + " dorm in intervalul " + schlafprogram + " si apartin grupei" + gruppe);
+        }
         public override void mancareFreuTraurig()
         {
             if (Mitagsessen == true) Console.WriteLine("Das Kind beckommt Mittagsessen");

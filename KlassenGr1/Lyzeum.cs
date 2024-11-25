@@ -8,7 +8,7 @@ namespace KlassenGr1
 {
     internal class Lyzeum : Schuler
     {
-        int n1, n2, n3, n4;
+         int n1, n2, n3, n4;
         bool bursa;
 
         public int N1 { get; set; }
@@ -40,6 +40,9 @@ namespace KlassenGr1
             this.bursa = bursa;
         }
 
-
+        public override void prezintate()
+        {
+            Console.WriteLine("eu sunt "+Nrmat+" am "+Nrore+" ore si urmatoarele note "+n1+" "+n2+" "+n3+" "+n4);
+        }
     }
 }

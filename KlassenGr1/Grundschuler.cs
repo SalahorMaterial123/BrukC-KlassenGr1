@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grundschule
+namespace KlassenGr1
 {
     internal class Grundschule : Schuler
     {
@@ -14,8 +14,11 @@ namespace Grundschule
         {
             SchuleAnders = schuleAnders;
         }
-
-        public void GehenSchuleAnders()
+        public override void prezintate()
+        {
+            Console.WriteLine("eu sunt saptamana " + SchuleAnders + " si colegii mei nu au facut destul");
+        }
+        public   void GehenSchuleAnders()
         {
             int schuleAnders;
             int ok = 1;

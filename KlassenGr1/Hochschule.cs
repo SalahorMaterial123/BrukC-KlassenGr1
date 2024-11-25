@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KlassenGr1
 {
-    internal class Hochschule : Schuler2
+    internal class Hochschule : Schuler
     {
         public string Name { set; get; }
         public string Ort { set; get; }
@@ -47,6 +47,11 @@ namespace KlassenGr1
             if (profil == "inginerie")
                 return 7;
             return 0;
+        }
+        public override void prezintate()
+        {
+            
+            Console.WriteLine(Name+" locuiesc in " +Ort+" si gazduiesc "+AnzahlStudierende+" de elevi");
         }
         public override void mancareFreuTraurig()
         {
